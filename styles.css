@@ -380,6 +380,10 @@ p { margin: 0 0 1.1em; }
 .faq details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
 .faq details p { padding-bottom: 22px; margin: 0; font-size: .95rem; }
 .faq details p.placeholder { font-style: italic; color: var(--taupe); }
+.faq details p + ul { margin-top: -10px; }
+.faq details ul { margin: 0; padding: 0 0 22px 1.3em; font-size: .95rem; }
+.faq details li { margin-bottom: 4px; }
+.faq details li::marker { color: var(--sage); }
 
 /* ---------- Contact ---------- */
 .contact-inner {
