@@ -7,7 +7,7 @@ index.html       ← all page content
 styles.css       ← colors, fonts, layout
 script.js        ← mobile menu + contact form
 thank-you.html   ← shown after the form is sent if JavaScript is off
-images/          ← leaf.svg (logo), leaf-white.svg (footer logo), favicon.svg, headshot.jpg (add later)
+images/          ← logo.jpg (site logo), logo-original.png (full-size master), favicon.png, apple-touch-icon.png, headshot.jpg (add later)
 ```
 
 ## 1. Turn on the contact form (Web3Forms, free)
