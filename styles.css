@@ -379,6 +379,7 @@ p { margin: 0 0 1.1em; }
 }
 .faq details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
 .faq details p { padding-bottom: 22px; margin: 0; font-size: .95rem; }
+.faq details p.placeholder { font-style: italic; color: var(--taupe); }
 
 /* ---------- Contact ---------- */
 .contact-inner {
