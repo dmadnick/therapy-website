@@ -31,10 +31,10 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
 // Contact form: submit in the background and show a message on the page
 const form = document.getElementById('contact-form');
-const status = form.querySelector('.form-status');
-const submitBtn = form.querySelector('button[type="submit"]');
+const status = form?.querySelector('.form-status');
+const submitBtn = form?.querySelector('button[type="submit"]');
 
-form.addEventListener('submit', async (e) => {
+form?.addEventListener('submit', async (e) => {
   e.preventDefault();
   submitBtn.disabled = true;
   status.className = 'form-status';

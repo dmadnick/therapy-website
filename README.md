@@ -3,7 +3,8 @@
 A single-page static site (plain HTML, CSS and JS). There is no build step.
 
 ```
-index.html       ← all page content
+index.html       ← home page (all main sections)
+about.html       ← full About Me page (bio, education, training, publications)
 styles.css       ← colors, fonts, layout
 script.js        ← mobile menu + contact form
 thank-you.html   ← shown after the form is sent if JavaScript is off
