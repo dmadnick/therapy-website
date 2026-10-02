@@ -8,7 +8,7 @@ about.html       ← full About Me page (bio, education, training, publications)
 styles.css       ← colors, fonts, layout
 script.js        ← mobile menu + contact form
 thank-you.html   ← shown after the form is sent if JavaScript is off
-images/          ← hero.jpg, ocean.jpg, path.jpg (Unsplash photos), favicon.svg, apple-touch-icon.png, headshot.jpg (add later)
+images/          ← hero.jpg, ocean.jpg, path.jpg (Unsplash photos), favicon.svg, apple-touch-icon.png, headshot.jpg
 ```
 
 ## 1. Turn on the contact form (Web3Forms, free)
@@ -19,12 +19,7 @@ images/          ← hero.jpg, ocean.jpg, path.jpg (Unsplash photos), favicon.sv
 
 Messages will arrive in your Gmail. Check the spam folder the first time you test it.
 
-## 2. Add your headshot
-
-Save the photo as `images/headshot.jpg`. A portrait shape works best, about 1000×1250 px.
-In `index.html`, search for `HEADSHOT` and follow the note there.
-
-## 3. Deploy on Cloudflare Pages
+## 2. Deploy on Cloudflare Pages
 
 1. In the Cloudflare dashboard, go to **Workers & Pages → Create → Pages → Upload assets**.
 2. Name the project (for example `deborahmadnicktherapy`) and upload this folder.
