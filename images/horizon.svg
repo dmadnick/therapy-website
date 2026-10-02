@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="hsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C9DAE7"/><stop offset=".7" stop-color="#EDE6DC"/><stop offset="1" stop-color="#F3E7D7"/>
+    </linearGradient>
+    <linearGradient id="hsea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B9CEDD"/><stop offset="1" stop-color="#93AFC4"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="500" fill="url(#hsky)"/>
+  <circle cx="380" cy="292" r="58" fill="#F6E9D6"/>
+  <circle cx="380" cy="292" r="90" fill="#F6E9D6" opacity=".35"/>
+  <path d="M0 300 C120 286 220 280 300 288 C380 296 470 284 600 270 L600 312 L0 312 Z" fill="#A9BFD0" opacity=".8"/>
+  <rect y="310" width="600" height="190" fill="url(#hsea)"/>
+  <g stroke="#F8F2E9" stroke-linecap="round" fill="none">
+    <path d="M330 326 H430" stroke-width="3" opacity=".8"/><path d="M345 344 H415" stroke-width="3" opacity=".6"/>
+    <path d="M355 362 H405" stroke-width="2.5" opacity=".5"/><path d="M60 380 H200" stroke-width="2" opacity=".35"/>
+    <path d="M420 420 H560" stroke-width="2" opacity=".35"/><path d="M120 455 H300" stroke-width="2" opacity=".3"/>
+  </g>
+</svg>

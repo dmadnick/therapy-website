@@ -8,7 +8,7 @@ about.html       ← full About Me page (bio, education, training, publications)
 styles.css       ← colors, fonts, layout
 script.js        ← mobile menu + contact form
 thank-you.html   ← shown after the form is sent if JavaScript is off
-images/          ← logo.jpg (site logo), logo-original.png (full-size master), favicon.png, apple-touch-icon.png, headshot.jpg (add later)
+images/          ← hero.svg, horizon.svg, path.svg (coastal illustrations), favicon.svg, apple-touch-icon.png, headshot.jpg (add later)
 ```
 
 ## 1. Turn on the contact form (Web3Forms, free)
@@ -28,7 +28,7 @@ In `index.html`, search for `HEADSHOT` and follow the note there.
 
 1. In the Cloudflare dashboard, go to **Workers & Pages → Create → Pages → Upload assets**.
 2. Name the project (for example `deborahmadnicktherapy`) and upload this folder.
-   Leave out `.claude/`, `README.md` and `logo-options.html`.
+   Leave out `.claude/` and `README.md`.
 3. Open **Custom domains → Set up a custom domain** and enter `deborahmadnicktherapy.com`
    (and `www.deborahmadnicktherapy.com`). If you bought the domain through Cloudflare, the DNS is set up automatically.
 
