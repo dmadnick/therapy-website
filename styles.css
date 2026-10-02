@@ -205,10 +205,10 @@ p { margin: 0 0 1.1em; }
 
 /* ---------- Hero ---------- */
 .hero {
-  /* swap images/hero.svg for a photo (e.g. images/hero.jpg) when you have one */
+  /* photo: Spencer DeMera on Unsplash */
   background:
     linear-gradient(90deg, rgba(248, 244, 238, .78) 0%, rgba(248, 244, 238, .35) 42%, rgba(248, 244, 238, 0) 62%),
-    url("images/hero.svg") right center / cover no-repeat;
+    url("images/hero.jpg") center 55% / cover no-repeat;
   min-height: 560px;
   display: flex;
   align-items: center;
@@ -258,33 +258,27 @@ p { margin: 0 0 1.1em; }
 .intro-text p { font-size: .98rem; }
 .intro-text .text-link { display: inline-block; margin-top: .4em; }
 .intro-art {
-  background: url("images/horizon.svg") center / cover no-repeat;
+  background: url("images/ocean.jpg") center / cover no-repeat;
   min-height: 360px;
 }
 
 /* ---------- Services ---------- */
-.services-grid {
+.cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 56px;
+  gap: 24px;
 }
-.service {
-  text-align: center;
-  padding: 0 36px;
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  border-top: 3px solid var(--deep-blue);
+  padding: 34px 30px 32px;
+  box-shadow: 0 8px 30px rgba(31, 69, 96, .06);
 }
-.service:not(:nth-child(3n + 1)) { border-left: 1px solid var(--line); }
-.icon {
-  width: 42px;
-  height: 42px;
-  margin: 0 auto 16px;
-  fill: none;
-  stroke: var(--deep-blue);
-  stroke-width: 1.2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-.service h3 { margin-bottom: .6em; }
-.service p { margin: 0; font-size: .94rem; color: var(--charcoal); }
+.card:nth-child(3n + 2) { border-top-color: var(--sand); }
+.card:nth-child(3n) { border-top-color: var(--dusty-blue); }
+.card h3 { margin-bottom: .6em; }
+.card p { margin: 0; font-size: .94rem; color: var(--charcoal); }
 
 .approaches {
   text-align: center;
@@ -329,7 +323,7 @@ p { margin: 0 0 1.1em; }
 .approach-content p:not(.eyebrow) { max-width: 30em; margin-bottom: 1.8em; }
 .approach-content .btn { align-self: flex-start; }
 .approach-art {
-  background: url("images/path.svg") center / cover no-repeat;
+  background: url("images/path.jpg") center / cover no-repeat;
   min-height: 360px;
 }
 
@@ -604,7 +598,7 @@ textarea { resize: vertical; }
     min-height: 0;
     background:
       linear-gradient(180deg, rgba(248, 244, 238, .82) 0%, rgba(248, 244, 238, .6) 60%, rgba(248, 244, 238, .25) 100%),
-      url("images/hero.svg") 70% center / cover no-repeat;
+      url("images/hero.jpg") 70% center / cover no-repeat;
   }
   .hero-text { padding: 64px 0; }
 
@@ -614,9 +608,7 @@ textarea { resize: vertical; }
   .approach-content { padding: 64px 32px; background-size: 160px auto; background-position: left -70px center, 0 0; }
 
   .section { padding: 72px 0; }
-  .services-grid { grid-template-columns: repeat(2, 1fr); }
-  .service:not(:nth-child(3n + 1)) { border-left: 0; }
-  .service:nth-child(2n) { border-left: 1px solid var(--line); }
+  .cards { grid-template-columns: repeat(2, 1fr); }
   .contact-inner { grid-template-columns: 1fr; gap: 40px; }
   .steps { grid-template-columns: 1fr; gap: 36px; }
 }
@@ -627,8 +619,8 @@ textarea { resize: vertical; }
   .brand-name { font-size: 1.2rem; }
   .brand-sub { font-size: .56rem; letter-spacing: .18em; }
   .intro-content, .approach-content { padding: 56px 16px; }
-  .services-grid { grid-template-columns: 1fr; row-gap: 44px; }
-  .service, .service:nth-child(2n) { border-left: 0; padding: 0 8px; }
+  .cards { grid-template-columns: 1fr; }
+  .card { padding: 28px 22px; }
   .field-row { grid-template-columns: 1fr; gap: 0; }
   .contact-form { padding: 28px 20px; }
   .faq details { padding: 0 18px; }

@@ -8,7 +8,7 @@ about.html       ← full About Me page (bio, education, training, publications)
 styles.css       ← colors, fonts, layout
 script.js        ← mobile menu + contact form
 thank-you.html   ← shown after the form is sent if JavaScript is off
-images/          ← hero.svg, horizon.svg, path.svg (coastal illustrations), favicon.svg, apple-touch-icon.png, headshot.jpg (add later)
+images/          ← hero.jpg, ocean.jpg, path.jpg (Unsplash photos), favicon.svg, apple-touch-icon.png, headshot.jpg (add later)
 ```
 
 ## 1. Turn on the contact form (Web3Forms, free)
@@ -33,3 +33,11 @@ In `index.html`, search for `HEADSHOT` and follow the note there.
    (and `www.deborahmadnicktherapy.com`). If you bought the domain through Cloudflare, the DNS is set up automatically.
 
 To update the site later, upload the folder again under **Create new deployment**.
+
+## Photo credits
+
+Photos are from Unsplash (free to use under the Unsplash License; credit not required):
+
+- `images/hero.jpg`: Spencer DeMera, https://unsplash.com/photos/jUlVz51P0Yk
+- `images/ocean.jpg`: Clark Gu, https://unsplash.com/photos/sbNlS7dWqKE
+- `images/path.jpg`: Florian Cordier, https://unsplash.com/photos/uq1MFvHcRUg
