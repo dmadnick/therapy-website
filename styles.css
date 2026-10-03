@@ -513,6 +513,15 @@ textarea { resize: vertical; }
   opacity: .85;
 }
 .footer-meta p { margin: 0; }
+.footer-legal {
+  margin-top: 16px;
+  font-size: .74rem;
+  letter-spacing: .04em;
+  opacity: .85;
+}
+.footer-legal a { color: var(--ivory); font-weight: 700; text-underline-offset: 3px; }
+.footer-legal a:hover { opacity: .8; }
+.footer-legal p { margin: 4px 0 0; }
 
 /* ---------- About page ---------- */
 .about-page h1 { margin-bottom: .3em; }
