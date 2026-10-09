@@ -8,6 +8,11 @@
     "directory": ".",
     "binding": "ASSETS"
   },
+  // Custom domains: Cloudflare creates the DNS records and HTTPS certificates on deploy.
+  "routes": [
+    { "pattern": "deborahmadnicktherapy.com", "custom_domain": true },
+    { "pattern": "www.deborahmadnicktherapy.com", "custom_domain": true }
+  ],
   // Contact form emails go only to this verified Email Routing address.
   "send_email": [
     { "name": "EMAIL", "destination_address": "dmadnickpsyd@gmail.com" }
