@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://deborahmadnicktherapy.com/sitemap.xml

@@ -9,6 +9,8 @@ styles.css       ← colors, fonts, layout
 script.js        ← mobile menu + contact form
 worker/index.js  ← Cloudflare Worker: serves the site and emails contact form messages
 thank-you.html   ← shown after the form is sent if JavaScript is off
+robots.txt       ← tells search engines where the sitemap is
+sitemap.xml      ← list of pages for search engines (update lastmod when pages change)
 images/          ← hero.jpg, ocean.jpg, path.jpg (Unsplash photos), favicon.svg, apple-touch-icon.png, headshot.jpg
 ```
 

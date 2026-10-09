@@ -12,6 +12,11 @@ const PREFERRED = ["Email", "Phone call", "Text message"];
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    // Send www visitors to the main address so search engines see one site.
+    if (url.hostname.startsWith("www.")) {
+      url.hostname = url.hostname.slice(4);
+      return Response.redirect(url.toString(), 301);
+    }
     if (url.pathname === "/api/contact") {
       if (request.method !== "POST") return new Response("Method not allowed", { status: 405 });
       return handleContact(request, env);
