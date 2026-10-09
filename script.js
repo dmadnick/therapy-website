@@ -55,8 +55,7 @@ form?.addEventListener('submit', async (e) => {
     status.textContent = "Thank you for reaching out. I'll be in touch within two business days.";
   } catch (err) {
     status.classList.add('error');
-    status.innerHTML = 'Sorry, something went wrong. Please email me directly at ' +
-      '<a href="mailto:dmadnickpsyd@gmail.com">dmadnickpsyd@gmail.com</a>.';
+    status.textContent = 'Sorry, something went wrong. Please try again in a few minutes.';
   } finally {
     submitBtn.disabled = false;
   }
