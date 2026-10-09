@@ -6,4 +6,5 @@
 .DS_Store
 README.md
 wrangler.jsonc
+worker
 screenshot_*.pdf

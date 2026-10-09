@@ -285,12 +285,8 @@
           </a>
         </div>
 
-        <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-          <!-- Web3Forms access key: get a free key at https://web3forms.com using dmadnickpsyd@gmail.com -->
-          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
-          <input type="hidden" name="subject" value="New inquiry from deborahmadnicktherapy.com">
-          <input type="hidden" name="from_name" value="Therapy Website">
-          <input type="hidden" name="redirect" value="https://deborahmadnicktherapy.com/thank-you.html">
+        <!-- Submissions are emailed to dmadnickpsyd@gmail.com by worker/index.js (Cloudflare Email Routing) -->
+        <form class="contact-form" id="contact-form" action="/api/contact" method="POST">
           <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 
           <div class="field">

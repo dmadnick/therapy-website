@@ -42,7 +42,6 @@ form?.addEventListener('submit', async (e) => {
 
   try {
     const data = Object.fromEntries(new FormData(form));
-    delete data.redirect;
     const res = await fetch(form.action, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Accept: 'application/json' },

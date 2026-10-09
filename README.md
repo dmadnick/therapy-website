@@ -7,17 +7,18 @@ index.html       ← home page (all main sections)
 about.html       ← full About Me page (bio, education, training, publications)
 styles.css       ← colors, fonts, layout
 script.js        ← mobile menu + contact form
+worker/index.js  ← Cloudflare Worker: serves the site and emails contact form messages
 thank-you.html   ← shown after the form is sent if JavaScript is off
 images/          ← hero.jpg, ocean.jpg, path.jpg (Unsplash photos), favicon.svg, apple-touch-icon.png, headshot.jpg
 ```
 
-## 1. Turn on the contact form (Web3Forms, free)
+## 1. Contact form (Cloudflare Email Routing)
 
-1. Go to https://web3forms.com, enter **dmadnickpsyd@gmail.com**, and click "Create Access Key".
-2. Copy the key from the email they send you.
-3. In `index.html`, replace `YOUR_WEB3FORMS_ACCESS_KEY` with that key.
+The form posts to `/api/contact`, handled by `worker/index.js`, which emails each message to
+**dmadnickpsyd@gmail.com** from `hello@deborahmadnicktherapy.com` (replies go to the visitor).
 
-Messages will arrive in your Gmail. Check the spam folder the first time you test it.
+This requires Email Routing to be enabled on the domain in Cloudflare, with
+`dmadnickpsyd@gmail.com` verified as a destination address. Check spam the first time you test it.
 
 ## 2. Deploy on Cloudflare Workers
 

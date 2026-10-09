@@ -1,8 +1,15 @@
 {
-  // Cloudflare Workers config: serves this folder as a static website.
+  // Cloudflare Workers config: serves this folder as a static website
+  // and runs worker/index.js for the contact form (/api/contact).
   "name": "deborahmadnicktherapy",
+  "main": "worker/index.js",
   "compatibility_date": "2026-10-09",
   "assets": {
-    "directory": "."
-  }
+    "directory": ".",
+    "binding": "ASSETS"
+  },
+  // Contact form emails go only to this verified Email Routing address.
+  "send_email": [
+    { "name": "EMAIL", "destination_address": "dmadnickpsyd@gmail.com" }
+  ]
 }
