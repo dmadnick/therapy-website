@@ -19,15 +19,18 @@ images/          ← hero.jpg, ocean.jpg, path.jpg (Unsplash photos), favicon.sv
 
 Messages will arrive in your Gmail. Check the spam folder the first time you test it.
 
-## 2. Deploy on Cloudflare Pages
+## 2. Deploy on Cloudflare Workers
 
-1. In the Cloudflare dashboard, go to **Workers & Pages → Create → Pages → Upload assets**.
-2. Name the project (for example `deborahmadnicktherapy`) and upload this folder.
-   Leave out `.claude/` and `README.md`.
-3. Open **Custom domains → Set up a custom domain** and enter `deborahmadnicktherapy.com`
-   (and `www.deborahmadnicktherapy.com`). If you bought the domain through Cloudflare, the DNS is set up automatically.
+The site deploys from GitHub (`dmadnick/therapy-website`) using `wrangler.jsonc`.
+Files listed in `.assetsignore` are not published.
 
-To update the site later, upload the folder again under **Create new deployment**.
+1. In the Cloudflare dashboard, go to **Workers & Pages → Create application**.
+2. Next to **Import a repository**, select **Get started**, connect GitHub, and pick `therapy-website`.
+3. Leave the build command empty and keep the deploy command `npx wrangler deploy`, then **Save and Deploy**.
+4. In the Worker, open **Settings → Domains & Routes → Add → Custom domain** and add
+   `deborahmadnicktherapy.com` (and `www.deborahmadnicktherapy.com`).
+
+After that, every `git push` to `main` redeploys the site automatically.
 
 ## Photo credits
 
